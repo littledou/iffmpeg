@@ -26,13 +26,14 @@ add_library( # Sets the name of the library.
 # completing its build.
 
 find_library( # Sets the name of the path variable.
-        iffmpeg
+        log-lib
 
         # Specifies the name of the NDK library that
         # you want CMake to locate.
         log)
 
 
+include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 
